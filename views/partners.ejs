@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/adaptive-icon.png" type="image/x-icon">
+  <meta name="description" content="">
+  <title>Partners</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <style>
+    .tableData {
+        flex: 1;
+        align-items: center;
+    }
+    .view {
+        background-color: rgb(255, 166, 0);
+        color: white;
+        border-radius: 5px;
+    }
+    .addgrantbutton {
+        background-color: rgb(69, 136, 24);
+        color: white;
+        border-radius: 5px;
+    }
+    .delete {
+        background-color: rgb(180, 1, 1);
+        color: white;
+        border-radius: 5px;
+    }
+    .techabled {
+        display: inline-block;
+        color: rgb(23, 58, 123);
+        background-color: rgb(211, 221, 237);
+        padding: 4px;
+        border-radius: 3px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    .othercategory {
+        display: inline-block;
+        color: rgb(255, 149, 0);
+        background-color: rgb(237, 226, 211);
+        padding: 4px;
+        border-radius: 3px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    .statusopen {
+        display: inline-block;
+        color: rgb(54, 123, 23);
+        background-color: rgb(219, 237, 211);
+        padding: 4px;
+        border-radius: 3px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    .statusclosed {
+        display: inline-block;
+        color: rgb(123, 23, 23);
+        background-color: rgb(237, 211, 211);
+        padding: 4px;
+        border-radius: 3px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+    .infoupdated {
+        padding-top: 40px;
+        padding-bottom: 0px;
+        background-color: rgb(69, 153, 69);
+        align-items: center;
+        justify-content: center;
+    }
+    .updatedMessage {
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  
+<section data-bs-version="5.1" class="menu menu2 cid-ukWKL4uJZV" once="menu" id="menu2-17">    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <form action="gotodashwelcome" method="POST">    
+                    <input hidden name="token" value="<%=token %>">
+                    <button type="submit" class="navbar-caption text-black display-4">IstartApp Dashboard</button>
+                </form>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <form action="gotodashboardstats" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Statisitics</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotograntcalls" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Grants</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotopartners" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Partners</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotomentorships" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Mentorships</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotoprojects" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Projects</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotohelpfultips" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Helpful Tips</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotocategories" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Categories</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotoapplications" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Applications</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotousers" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Users</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="logout" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Logout</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<% if(typeof message!= "undefined" && message && status){ %>
+<section class="infoupdated">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h3 class="mbr-section-title mb-4 mbr-fonts-style display-4 updatedMessage"><strong><%=message %></strong></h3>
+            </div>
+        </div>
+    </div>
+</section>
+<% } %>
+
+<section data-bs-version="5.1" class="header6 cid-ukWVLQSNmQ" id="header6-r">
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(255, 145, 0);"></div>
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-7"><strong>Partners</strong></h1>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <form action="gotoaddpartnerform" method="POST">
+                    <input hidden name="token" data-form-field="token" value="<%=token %>">
+                    <button type="submit" class="addgrantbutton display-4" href="">Add Partner</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>  
+    <div class="container">
+        <div class="justify-content-center content-row mt-4">
+            <div class="card p-4 p-md-3 col-lg-12 col-md-12">
+                <div class="card-box">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="table-responsive">
+                                <table class="table" id="dataTable">
+                                    <thead class="display-4">
+                                        <tr>
+                                            <th>Partner Profile</th>
+                                            <th>Name</th>
+                                            <th>Location</th>
+                                            <th>Type</th>
+                                            <th>Country</th>
+                                            <th colspan="2">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="display-4 tableData">
+                                        <% partners.forEach(function(item){ %>
+                                        <tr>
+                                            <td><img src="<%=item.imageIcon %>" alt="PartnerImageIcon" style="width:35px;height:35px;border-radius:35px;"></td>
+                                            <td><%=item.name %></td>
+                                            <td><%=item.location %></td>
+                                            <td><%=item.type %></td>
+                                            <td><%=item.country %></td>
+                                            <td>
+                                                <form action="viewpartner" method="POST">
+                                                    <input hidden name="token" data-form-field="token" value="<%=token %>">
+                                                    <input hidden name="partnerId" data-form-field="partnerId" value="<%=item._id %>">
+                                                    <button type="submit" class="view" href="">View</button>
+                                                </form>
+                                            </td>
+                                            <td>
+                                                <form action="deletepartner" method="POST">
+                                                    <input hidden name="token" data-form-field="token" value="<%=token %>">
+                                                    <input hidden name="partnerId" data-form-field="partnerId" value="<%=item._id %>">
+                                                    <button type="submit" class="delete" href="">Delete</button>
+                                                </form>
+                                            </td>
+                                        </tr> 
+                                        <% }) %>   
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div> 
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer7 cid-ukWNFCKGag" once="footers" id="footer7-b">
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-4"><strong>
+                    © Copyright 2024 istartapp - All Rights Reserved
+                </strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  
+<script src="assets/smoothscroll/smooth-scroll.js"></script>  
+<script src="assets/ytplayer/index.js"></script>  
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>  
+<script src="assets/theme/js/script.js"></script>    
+
+</body>
+</html>

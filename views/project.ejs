@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/adaptive-icon.png" type="image/x-icon">
+  <meta name="description" content="">
+  <title>Project - <%=project.name %></title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <style>
+    .textarea {
+        height: 500px;
+    }
+    .infoupdated {
+        padding-top: 40px;
+        padding-bottom: 0px;
+        background-color: rgb(69, 153, 69);
+        align-items: center;
+        justify-content: center;
+    }
+    .updatedMessage {
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+    .pageHeader {
+        padding-top: 40px;
+        padding-bottom: 0px;
+        background-color: rgb(255, 123, 0);
+        align-items: center;
+        justify-content: center;
+    }
+    .pageHeaderText {
+        color: white;
+        font-size: 12px;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  
+<section data-bs-version="5.1" class="menu menu2 cid-ukWKL4uJZV" once="menu" id="menu2-17">    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <form action="gotodashwelcome" method="POST">    
+                    <input hidden name="token" value="<%=token %>">
+                    <button type="submit" class="navbar-caption text-black display-4">IstartApp Dashboard</button>
+                </form>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <form action="gotodashboardstats" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Statisitics</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotograntcalls" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Grants</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotopartners" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Partners</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotomentorships" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Mentorships</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotoprojects" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Projects</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotohelpfultips" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Helpful Tips</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotocategories" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Categories</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotoapplications" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Applications</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="gotousers" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Users</button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="logout" method="POST">
+                            <input hidden name="token" value="<%=token %>">
+                            <button type="submit" class="nav-link link text-black display-4">Logout</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<% if(typeof message!= "undefined" && message){ %>
+<section class="infoupdated">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h3 class="mbr-section-title mb-4 mbr-fonts-style display-4 updatedMessage"><strong><%=message %></strong></h3>
+            </div>
+        </div>
+    </div>
+</section>
+<% } %>
+
+<section class="pageHeader">
+    <div class="container pageOverlay">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h3 class="mbr-section-title mb-4 mbr-fonts-style display-4 updatedMessage"><strong>Edit Project</strong></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form6 cid-ukXM5kql9I" id="form6-15">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-lg-12 mx-auto mbr-form display-4">
+                <form action="updateproject" method="POST" data-rcpha_sitekey="" data-rcpha_secretkey="" class="mbr-form form-with-styler mx-auto display-4" data-verified="" enctype="multipart/form-data">
+                    <div class="dragArea row display-4">
+                        <input hidden name="projectId" value="<%=project._id %>">
+                        <input hidden name="token" value="<%=token %>">
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="logoImage">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Current Logo:</strong></h4>
+                            <img src="<%=project.logoImage %>" alt="logoImage" style="width: 70px;height: 70px;border-radius: 10px;">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Upload An Image:</strong></h4>
+                            <input type="file" name="logoImage" id="logoImage" accept="image/*">    
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="mainImage">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Main Image:</strong></h4>
+                            <img src="<%=project.mainImage %>" alt="mainImage" style="width: 100%; border-radius: 10px;">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Upload An Image:</strong></h4>
+                            <input type="file" name="mainImage" id="mainImage" accept="image/*">    
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 form-group mb-3" data-for="gallery1">
+                                <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Gallery1 Image:</strong></h4>
+                                <img src="<%=project.gallery1 %>" alt="gallery1" style="width: 100%; border-radius: 10px;">
+                                <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Upload An Image:</strong></h4>
+                                <input type="file" name="grantImage" id="grantImage" accept="image/*">    
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 form-group mb-3" data-for="gallery2">
+                                <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Gallery2 Display Image:</strong></h4>
+                                <img src="<%=project.gallery2 %>" alt="gallery2" style="width: 100%; border-radius: 10px;">
+                                <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Upload An Image:</strong></h4>
+                                <input type="file" name="gallery2" id="gallery2" accept="image/*">    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 form-group mb-3" data-for="gallery3">
+                                <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Gallery3 Display Image:</strong></h4>
+                                <img src="<%=project.gallery3 %>" alt="gallery3" style="width: 100%; border-radius: 10px;">
+                                <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Upload An Image:</strong></h4>
+                                <input type="file" name="gallery3" id="gallery3" accept="image/*">    
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 form-group mb-3" data-for="gallery4">
+                                <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Gallery4 Display Image:</strong></h4>
+                                <img src="<%=project.gallery4 %>" alt="gallery4" style="width: 100%; border-radius: 10px;">
+                                <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Upload An Image:</strong></h4>
+                                <input type="file" name="gallery4" id="gallery4" accept="image/*">    
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="name">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Project Name:</strong></h4>
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="<%=project.name %>" id="name-form6-15">
+                        </div>
+                        <div data-for="industry" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Industry:</strong></h4>
+                            <select name="industry" data-form-field="industry" class="form-control" id="industry-form6-17">
+                                <option value="<%=project.industry %>">Selected - <%=project.industry %></option>
+                                <option value="Agribusiness">Agribusiness</option>
+                                <option value="Trade and Commerce">Trade and Commerce</option>
+                                <option value="Tourism and Hospitality">Tourism and Hospitality</option>
+                                <option value="Construction and Real Estate">Construction and Real Estate</option>
+                                <option value="Transport and Logistics">Transport and Logistics</option>
+                                <option value="Financial and Insurance Services">Financial and Insurance Services</option>
+                                <option value="Professional Services">Professional Services</option>
+                                <option value="Education">Education</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Creative Arts">Creative Arts</option>
+                                <option value="Energy and Minerals">Energy and Minerals</option>
+                            </select>
+                        </div>
+                        <div data-for="subIndustry" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Sub-Industry:</strong></h4>
+                            <select name="subIndustry" data-form-field="subIndustry" class="form-control" id="subIndustry-form6-17">
+                                <option value="<%=project.subIndustry %>">Selected - <%=project.subIndustry %></option>
+                                <option value="Tech-Abled 4.1">Tech-Abled 4.1</option>
+                                <option value="Import Substitution">Import Substitution</option>
+                                <option value="STI Targeted Exports">STI Targeted Exports</option>
+                                <option value="Production Acceleration">Production Acceleration</option>
+                                <option value="Aeronautics and Space Science">Aeronautics and Space Science</option>
+                                <option value="Industry 4.0">Industry 4.0</option>
+                                <option value="Mobility">Mobility</option>
+                                <option value="Infrastructure Innovation">Infrastructure Innovation</option>
+                                <option value="Pathogen Economy">Pathogen Economy</option>
+                            </select>
+                        </div>
+                        <div data-for="location" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Location:</strong></h4>
+                            <input type="text" name="location" placeholder="Location" data-form-field="location" class="form-control" value="<%=project.location %>" id="location-form6-15">
+                        </div>
+                        <div data-for="founders" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Founders:</strong></h4>
+                            <textarea type="text" name="founders" placeholder="Founders" data-form-field="founders" class="form-control textarea" id="founders-form6-15"><%=project.founders %></textarea>
+                        </div>
+                        <div data-for="overview" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Overview:</strong></h4>
+                            <textarea type="text" name="overview" placeholder="Overview" data-form-field="overview" class="form-control textarea" id="overview-form6-15"><%=project.overview %></textarea>
+                        </div>
+                        <div data-for="biography" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Biography:</strong></h4>
+                            <textarea type="text" name="biography" placeholder="Biography" data-form-field="biography" class="form-control textarea" id="biography-form6-15"><%=project.biography %></textarea>
+                        </div>
+                        <div data-for="achievements" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Achievements:</strong></h4>
+                            <textarea type="text" name="achievements" placeholder="Achievements" data-form-field="achievements" class="form-control textarea" id="achievements-form6-15"><%=project.achievements %></textarea>
+                        </div>
+                        <div data-for="skills" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Skills:</strong></h4>
+                            <textarea type="text" name="skills" placeholder="Skills" data-form-field="skills" class="form-control textarea" id="skills-form6-15"><%=project.skills %></textarea>
+                        </div>
+                        <div data-for="investment" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Investment:</strong></h4>
+                            <textarea type="text" name="investment" placeholder="Investment" data-form-field="investment" class="form-control textarea" id="investment-form6-15"><%=project.investment %></textarea>
+                        </div>
+                        <div data-for="team" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Team:</strong></h4>
+                            <textarea type="text" name="team" placeholder="Project Team" data-form-field="team" class="form-control textarea" id="team-form6-15"><%=project.team %></textarea>
+                        </div>
+                        <div data-for="views" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Project Views:</strong></h4>
+                            <input disabled type="text" name="views" placeholder="Views" data-form-field="views" class="form-control" value="<%=project.views %>" id="views-form6-15">
+                        </div>
+                        <div data-for="rating" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Project rating:</strong></h4>
+                            <input disabled type="text" name="rating" placeholder="Rating" data-form-field="rating" class="form-control" value="<%=project.rating %>" id="rating-form6-15">
+                        </div>
+                        <div data-for="likes" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Project likes:</strong></h4>
+                            <input disabled type="text" name="likes" placeholder="Likes" data-form-field="likes" class="form-control" value="<%=project.likes %>" id="likes-form6-15">
+                        </div>
+                        <div data-for="country" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Country:</strong></h4>
+                            <input type="text" name="country" placeholder="Project Country" data-form-field="country" class="form-control" value="<%=project.country %>" id="country-form6-15">
+                        </div>
+                        <div data-for="userNo" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Project Owner UserNo:</strong></h4>
+                            <input type="text" name="userNo" placeholder="UserNumber" data-form-field="userNo" class="form-control" value="<%=project.userNo %>" id="userNo-form6-15">
+                        </div>
+                        <div data-for="yearOfRegistration" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Project Year Of Registration:</strong></h4>
+                            <input type="text" name="yearOfRegistration" placeholder="Year Of Registration" data-form-field="yearOfRegistration" class="form-control" value="<%=project.yearOfRegistration %>" id="yearOfRegistration-form6-15">
+                        </div>
+                        <div data-for="contact" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Contact:</strong></h4>
+                            <input type="text" name="contact" placeholder="Main Contact/Contact Number" data-form-field="contact" class="form-control" value="<%=project.contact %>" id="contact-form6-15">
+                        </div>
+                        <div data-for="alternativeContact" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Alternative Contact:</strong></h4>
+                            <input type="text" name="alternativeContact" placeholder="Alternative Contact Number" data-form-field="alternativeContact" class="form-control" value="<%=project.alternativeContact %>" id="alternativeContact-form6-15">
+                        </div>
+                        <div data-for="projectNo" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Project Number:</strong></h4>
+                            <input type="text" name="projectNo" placeholder="Project Number" data-form-field="projectNo" class="form-control" value="<%=project.projectNo %>" id="projectNo-form6-15">
+                        </div>
+                        <div data-for="status" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
+                            <h4 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-4"><strong>Project Status:</strong></h4>
+                            <select name="status" data-form-field="status" class="form-control" id="status-form6-17">
+                                <option value="<%=project.status %>">Selected - <%=project.status %></option>
+                                <option value="open">Open</option>
+                                <option value="disabled">Disabled</option>
+                            </select>                        
+                        </div>
+                        <div class="col-auto mbr-section-btn align-center">
+                            <button type="submit" class="btn btn-danger display-4">Update Project</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer7 cid-ukWNFCKGag" once="footers" id="footer7-14">
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-4"><strong>
+                    © Copyright 2024 istartapp - All Rights Reserved
+                </strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  
+<script src="assets/smoothscroll/smooth-scroll.js"></script>  
+<script src="assets/ytplayer/index.js"></script>  
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>  
+<script src="assets/theme/js/script.js"></script>      
+  
+</body>
+</html>
